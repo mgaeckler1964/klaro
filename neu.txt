@@ -1,0 +1,6 @@
+XML-Export Schüler.
+SRX Viewer für eigene Auswertungen.
+Neuer Filter für das Halbjahr bei den Kursen.
+Bemerkungsfeld zu den Unterrichtszeiten.
+Modul zu Kursschüler.
+Nummer bei den Prüfungen.

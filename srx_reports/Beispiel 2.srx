@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!--
+	define a report
+	===============
+	
+	sql_report attributes:
+	----------------------
+	
+	table_name:		the tag for the root element for the XML export. Default is "data"
+	record_name:	the tag for each record for the XML export. Default is "entry"
+	title:			the title for the report
+-->
+<sql_report table_name="kurse" record_name="kurs" title="Beispiel 2">
+	<query>
+		<!-- Here add your SQL Command -->
+		<sql>
+			select * from kurse 
+			where jahr = :theYear
+			order by anfangs_datum
+		</sql>
+		<params>
+			<!-- 
+				define the parameter
+				====================
+				
+				possible types are:
+				-------------------
+
+				int:		4 byte integer
+				float:		double precision floats
+				date:		date
+				time:		time
+				date_time:	date and time
+				string:		alpha numeric
+			-->
+			<param name="theYear" label="Jahr" value="2009" type="string" />
+		</params>
+	</query>
+</sql_report>

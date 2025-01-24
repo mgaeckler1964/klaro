@@ -1,0 +1,657 @@
+
+[InstallShield Wizard]
+iDate=1
+iTime=1
+Flag=0
+ISX.EXE Size=679936
+ISX.EXE Date=11:21:52  8.4.1999
+ISX.EXE Ver=2.1.2.62
+SETUP.EXE Size=45312
+SETUP.EXE Date=9:12:24  23.3.1999
+SETUP.EXE Ver=3.0.111.0
+SETUP.INS Size=81342
+SETUP.INS Date=11:26:40  8.4.1999
+SETUP.INS Ver=Nicht verfügbar
+_INST16.EX_ Size=81342
+_INST16.EX_ Date=11:26:40  8.4.1999
+_INST16.EX_ Ver=Nicht verfügbar
+_INST32I.EX_ Size=294079
+_INST32I.EX_ Date=9:12:22  23.3.1999
+_INST32I.EX_ Ver=Nicht verfügbar
+ISDEPEND.INI Size=6997
+ISDEPEND.INI Date=14:48:50  11.8.1999
+ISDEPEND.INI Ver=Nicht verfügbar
+SWDEPEND.INI Size=9885
+SWDEPEND.INI Date=15:13:24  28.1.2000
+SWDEPEND.INI Ver=Nicht verfügbar
+ICOMP.EXE Size=119808
+ICOMP.EXE Date=9:12:24  23.3.1999
+ICOMP.EXE Ver=3.00.062
+SPLIT.EXE Size=90624
+SPLIT.EXE Date=9:12:24  23.3.1999
+SPLIT.EXE Ver=3.00.060
+PACKLIST.EXE Size=87552
+PACKLIST.EXE Date=9:12:24  23.3.1999
+PACKLIST.EXE Ver=3.00.060
+Version=2.12
+DevTool=Borland C++Builder 5
+Platform=Win32
+DisksBuilt=1
+DisksDir=klaro\650MB\
+TabsVisit=11111111100001111
+LangNum=0
+LangDir=
+
+[VisualDesign]
+AppName=Klaro
+AppExe=[Programme]\klaro.exe
+AppExeFile=
+Version=2.0
+Company=CRESD
+Title=Klaro - Kursverwaltung 2.0
+TitleType=1
+BackgrndBmp=C:\CRESD\Vorlagen\Logo für Installshield.bmp
+BackgrndAlign=4
+Backgrnd=1
+BackgrndColor=10
+Uninstall=1
+UninstallChecked=1
+Silent=1
+SmsMode=0
+
+[Types]
+Types=1
+Type1Components=1
+Type1Name=Vollständig
+Type1ComponentList=1 
+
+[Components]
+Components=1
+Component1Groups=9
+Component1Name=Anwendungsdateien
+Component1Description=Zur Ausführung benötigte Anwendungsdateien
+Component1GroupList=1 2 3 4 5 6 7 8 9 
+
+[Groups]
+Groups=9
+Group1Size=10636365
+Group1Files=7
+Group1Name=Programme
+Group1Dir=<INSTALLDIR>
+Group1Update=2
+Group1TargetOS=-1
+Group1File1=C:\CRESD\Source\klaro\readme.txt
+Group1File2=C:\CRESD\Object\klaro.exe
+Group1File3=C:\CRESD\Object\klarodb.exe
+Group1File4=C:\CRESD\Source\klaro\handbuch.pdf
+Group1File5=C:\CRESD\Object\srxViewer.exe
+Group1File6=C:\CRESD\Source\klaro\bamf_logo.gif
+Group1File7=C:\CRESD\Object\srxViewer.DEU
+Group2Size=313541
+Group2Files=85
+Group2Name=Tabellen
+Group2Dir=<DATABASEDIR>
+Group2Update=2
+Group2TargetOS=-1
+Group2File1=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\SCHUELER.YG0
+Group2File2=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\ANWESENHEITEN.DB
+Group2File3=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\ANWESENHEITEN.PX
+Group2File4=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\ANWESENHEITEN.VAL
+Group2File5=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\ANWESENHEITEN.X02
+Group2File6=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\ANWESENHEITEN.Y02
+Group2File7=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\BEZAHLUNG.DB
+Group2File8=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\BEZAHLUNG.PX
+Group2File9=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\BEZAHLUNG.VAL
+Group2File10=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\BEZAHLUNG.X02
+Group2File11=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\BEZAHLUNG.Y02
+Group2File12=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\CONFIG.DB
+Group2File13=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\CONFIG.PX
+Group2File14=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\CONFIG.VAL
+Group2File15=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\FERIEN.DB
+Group2File16=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\FERIEN.PX
+Group2File17=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\FERIEN.VAL
+Group2File18=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSBUECHER.DB
+Group2File19=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSBUECHER.PX
+Group2File20=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSBUECHER.VAL
+Group2File21=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSBUECHER.X02
+Group2File22=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSBUECHER.Y02
+Group2File23=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSE.DB
+Group2File24=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSE.MB
+Group2File25=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSE.PX
+Group2File26=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSE.VAL
+Group2File27=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSE.XG0
+Group2File28=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSE.XG1
+Group2File29=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSE.YG0
+Group2File30=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSE.YG1
+Group2File31=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSLEHRER.DB
+Group2File32=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSLEHRER.PX
+Group2File33=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSLEHRER.VAL
+Group2File34=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSLEHRER.X02
+Group2File35=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSLEHRER.X03
+Group2File36=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSLEHRER.XG0
+Group2File37=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSLEHRER.Y02
+Group2File38=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSLEHRER.Y03
+Group2File39=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSLEHRER.YG0
+Group2File40=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSSCHUELER.DB
+Group2File41=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSSCHUELER.MB
+Group2File42=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSSCHUELER.PX
+Group2File43=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSSCHUELER.VAL
+Group2File44=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSSCHUELER.X02
+Group2File45=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSSCHUELER.X03
+Group2File46=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSSCHUELER.XG0
+Group2File47=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSSCHUELER.Y02
+Group2File48=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSSCHUELER.Y03
+Group2File49=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\KURSSCHUELER.YG0
+Group2File50=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\LEHRBUECHER.DB
+Group2File51=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\LEHRBUECHER.PX
+Group2File52=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\LEHRBUECHER.VAL
+Group2File53=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\LEHRBUECHER.XG0
+Group2File54=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\LEHRBUECHER.YG0
+Group2File55=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\LEHRER.DB
+Group2File56=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\LEHRER.MB
+Group2File57=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\LEHRER.PX
+Group2File58=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\LEHRER.VAL
+Group2File59=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\LEHRER.XG0
+Group2File60=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\LEHRER.YG0
+Group2File61=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\LEHRZEITEN.DB
+Group2File62=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\LEHRZEITEN.PX
+Group2File63=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\LEHRZEITEN.VAL
+Group2File64=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\LEHRZEITEN.X02
+Group2File65=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\LEHRZEITEN.Y02
+Group2File66=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\PRUEFSCHUELER.DB
+Group2File67=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\PRUEFSCHUELER.MB
+Group2File68=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\PRUEFSCHUELER.PX
+Group2File69=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\PRUEFSCHUELER.VAL
+Group2File70=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\PRUEFSCHUELER.X02
+Group2File71=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\PRUEFSCHUELER.X03
+Group2File72=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\PRUEFSCHUELER.XG0
+Group2File73=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\PRUEFSCHUELER.Y02
+Group2File74=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\PRUEFSCHUELER.Y03
+Group2File75=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\PRUEFSCHUELER.YG0
+Group2File76=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\PRUEFUNGEN.DB
+Group2File77=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\PRUEFUNGEN.PX
+Group2File78=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\PRUEFUNGEN.VAL
+Group2File79=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\PRUEFUNGEN.XG0
+Group2File80=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\PRUEFUNGEN.YG0
+Group2File81=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\SCHUELER.DB
+Group2File82=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\SCHUELER.MB
+Group2File83=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\SCHUELER.PX
+Group2File84=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\SCHUELER.VAL
+Group2File85=C:\CRESD\PdoxDB\KLARO\LeereTabellen 2.0\SCHUELER.XG0
+Group3Size=13079407
+Group3Files=52
+Group3Auto=101
+Group3ID=39001
+Group3Name=BDE/IDAPI Dateien
+Group3Dir=<ProgramFilesDir>\Common Files\Borland Shared\BDE
+Group3Update=-1
+Group3TargetOS=-1
+Group3File1=C:\PROGRAMME\BORLAND\BDE\IDAPI32.DLL
+Group3File1Auto=101
+Group3File2=C:\PROGRAMME\BORLAND\BDE\IDR20007.DLL
+Group3File2Auto=101
+Group3File3=C:\PROGRAMME\BORLAND\BDE\BLW32.DLL
+Group3File3Auto=101
+Group3File4=C:\PROGRAMME\BORLAND\BDE\BDEADMIN.EXE
+Group3File4Auto=101
+Group3File5=C:\PROGRAMME\BORLAND\BDE\BDEADMIN.HLP
+Group3File5Auto=101
+Group3File6=C:\PROGRAMME\BORLAND\BDE\BDEADMIN.CNT
+Group3File6Auto=101
+Group3File7=C:\PROGRAMME\BORLAND\BDE\BDEADMIN.TOC
+Group3File7Auto=101
+Group3File8=C:\PROGRAMME\BORLAND\BDE\DATAPUMP.HLP
+Group3File8Auto=101
+Group3File9=C:\PROGRAMME\BORLAND\BDE\DATAPUMP.CNT
+Group3File9Auto=101
+Group3File10=C:\PROGRAMME\BORLAND\BDE\IDDR32.DLL
+Group3File10Auto=101
+Group3File11=C:\PROGRAMME\BORLAND\BDE\IDPDX32.DLL
+Group3File11Auto=101
+Group3File12=C:\PROGRAMME\BORLAND\BDE\IDSQL32.DLL
+Group3File12Auto=101
+Group3File13=C:\PROGRAMME\BORLAND\BDE\IDBAT32.DLL
+Group3File13Auto=101
+Group3File14=C:\PROGRAMME\BORLAND\BDE\IDQBE32.DLL
+Group3File14Auto=101
+Group3File15=C:\PROGRAMME\BORLAND\BDE\IDDBAS32.DLL
+Group3File15Auto=101
+Group3File16=C:\PROGRAMME\BORLAND\BDE\IDASCI32.DLL
+Group3File16Auto=101
+Group3File17=C:\PROGRAMME\BORLAND\BDE\IDODBC32.DLL
+Group3File17Auto=101
+Group3File18=C:\PROGRAMME\BORLAND\BDE\IDDAO32.DLL
+Group3File18Auto=101
+Group3File19=C:\PROGRAMME\BORLAND\BDE\IDDA3532.DLL
+Group3File19Auto=101
+Group3File20=C:\PROGRA~1\INSTAL~2\INSTAL~1\redist\IDAPINST.DLL
+Group3File20Auto=101
+Group3File21=C:\PROGRAMME\BORLAND\BDE\BANTAM.DLL
+Group3File21Auto=101
+Group3File22=C:\PROGRAMME\BORLAND\BDE\USA.BTL
+Group3File22Auto=101
+Group3File23=C:\PROGRAMME\BORLAND\BDE\EUROPE.BTL
+Group3File23Auto=101
+Group3File24=C:\PROGRAMME\BORLAND\BDE\CEEUROPE.BTL
+Group3File24Auto=101
+Group3File25=C:\PROGRAMME\BORLAND\BDE\JAPAN.BTL
+Group3File25Auto=101
+Group3File26=C:\PROGRAMME\BORLAND\BDE\OTHER.BTL
+Group3File26Auto=101
+Group3File27=C:\PROGRAMME\BORLAND\BDE\FAREAST.BTL
+Group3File27Auto=101
+Group3File28=C:\PROGRAMME\BORLAND\BDE\CHARSET.CVB
+Group3File28Auto=101
+Group3File29=C:\PROGRAMME\BORLAND\BDE\sqlmss32.dll
+Group3File29Auto=102
+Group3File30=C:\PROGRA~1\INSTAL~2\INSTAL~1\redist\SQL_MSS.CNF
+Group3File30Auto=102
+Group3File31=C:\PROGRAMME\BORLAND\BDE\sqlsyb32.dll
+Group3File31Auto=102
+Group3File32=C:\PROGRA~1\INSTAL~2\INSTAL~1\redist\SQL_SYB.CNF
+Group3File32Auto=102
+Group3File33=C:\PROGRAMME\BORLAND\BDE\sqlint32.dll
+Group3File33Auto=102
+Group3File34=C:\PROGRA~1\INSTAL~2\INSTAL~1\redist\SQL_INT.CNF
+Group3File34Auto=102
+Group3File35=C:\PROGRAMME\BORLAND\BDE\sqlora32.dll
+Group3File35Auto=102
+Group3File36=C:\PROGRA~1\INSTAL~2\INSTAL~1\redist\SQL_ORA.CNF
+Group3File36Auto=102
+Group3File37=C:\PROGRAMME\BORLAND\BDE\sqlora8.dll
+Group3File37Auto=102
+Group3File38=C:\PROGRA~1\INSTAL~2\INSTAL~1\redist\SQL_ORA8.CNF
+Group3File38Auto=102
+Group3File39=C:\PROGRAMME\BORLAND\BDE\sqlinf32.dll
+Group3File39Auto=102
+Group3File40=C:\PROGRA~1\INSTAL~2\INSTAL~1\redist\SQL_INF.CNF
+Group3File40Auto=102
+Group3File41=C:\PROGRAMME\BORLAND\BDE\sqlinf9.dll
+Group3File41Auto=102
+Group3File42=C:\PROGRA~1\INSTAL~2\INSTAL~1\redist\SQL_INF9.CNF
+Group3File42Auto=102
+Group3File43=C:\PROGRAMME\BORLAND\BDE\sqldb232.dll
+Group3File43Auto=102
+Group3File44=C:\PROGRA~1\INSTAL~2\INSTAL~1\redist\SQL_DB2.CNF
+Group3File44Auto=102
+Group3File45=C:\PROGRAMME\BORLAND\BDE\sqlssc32.dll
+Group3File45Auto=102
+Group3File46=C:\PROGRA~1\INSTAL~2\INSTAL~1\redist\SQL_SSC.CNF
+Group3File46Auto=102
+Group3File47=C:\PROGRAMME\BORLAND\BDE\sqldb2v5.dll
+Group3File47Auto=102
+Group3File48=C:\PROGRA~1\INSTAL~2\INSTAL~1\redist\sql_DBv5.CNF
+Group3File48Auto=102
+Group3File49=C:\PROGRAMME\BORLAND\BDE\SQLLNK32.HLP
+Group3File49Auto=102
+Group3File50=C:\PROGRAMME\BORLAND\BDE\SQLLNK32.CNT
+Group3File50Auto=102
+Group3File51=C:\PROGRAMME\BORLAND\BDE\SQLLNK32.TOC
+Group3File51Auto=102
+Group3File52=C:\Programme\BORLAND\BDE\datapump.exe
+Group4Size=6080
+Group4Files=1
+Group4Auto=98
+Group4ID=38998
+Group4Name=BDE/IDAPI CNF Datei
+Group4Dir=<ProgramFilesDir>\Common Files\Borland Shared\BDE
+Group4Update=-1
+Group4TargetOS=-1
+Group4File1=C:\PROGRA~1\INSTAL~2\INSTAL~1\redist\IDAPI.CNF
+Group4File1Auto=98
+Group5Size=184832
+Group5Files=1
+Group5Auto=58
+Group5ID=38958
+Group5Name=Systemdateien - WinSysDir
+Group5Dir=<WINSYSDIR>
+Group5Update=-1
+Group5TargetOS=-1
+Group5File1=C:\WINDOWS\system32\BDEADMIN.CPL
+Group5File1Auto=58
+Group6Size=140342
+Group6Files=14
+Group6Name=Kurs Reports
+Group6Dir=<INSTALLDIR>\kurs_reports
+Group6Update=0
+Group6TargetOS=-1
+Group6File1=C:\CRESD\Source\klaro\kurs_reports\Kurs.xsl
+Group6File2=C:\CRESD\Source\klaro\kurs_reports\Alles.xsl
+Group6File3=C:\CRESD\Source\klaro\kurs_reports\BAMF Abrechnung skallierte Sprachprüfung.xsl
+Group6File4=C:\CRESD\Source\klaro\kurs_reports\BAMF Abrechnung.xsl
+Group6File5=C:\CRESD\Source\klaro\kurs_reports\BAMF Abschlusstestmeldung skalierte Sprachprüfung.xsl
+Group6File6=C:\CRESD\Source\klaro\kurs_reports\BAMF Abschlusstestmeldung.xsl
+Group6File7=C:\CRESD\Source\klaro\kurs_reports\BAMF Anwesenheit.xsl
+Group6File8=C:\CRESD\Source\klaro\kurs_reports\BAMF Anwesenheitsliste.xsl
+Group6File9=C:\CRESD\Source\klaro\kurs_reports\BAMF Beginn Integrationskurs 2008.xsl
+Group6File10=C:\CRESD\Source\klaro\kurs_reports\BAMF Beginn Integrationskurs 2009.xsl
+Group6File11=C:\CRESD\Source\klaro\kurs_reports\BAMF Teilnehmerbescheinigung.xsl
+Group6File12=C:\CRESD\Source\klaro\kurs_reports\BAMF Teilnehmermeldung.xsl
+Group6File13=C:\CRESD\Source\klaro\kurs_reports\kurs.dtd
+Group6File14=C:\CRESD\Source\klaro\kurs_reports\BAMF Anmeldeung einmalige Wiederholung.xsl
+Group7Size=13130
+Group7Files=2
+Group7Name=Schüler Reports
+Group7Dir=<INSTALLDIR>\schueler_reports
+Group7Update=0
+Group7TargetOS=-1
+Group7File1=C:\CRESD\Source\klaro\schueler_reports\schueler.dtd
+Group7File2=C:\CRESD\Source\klaro\schueler_reports\Einfache Liste.xsl
+Group8Size=13252
+Group8Files=6
+Group8Name=SRX Reports
+Group8Dir=<INSTALLDIR>\srx_reports
+Group8Update=0
+Group8TargetOS=-1
+Group8File1=C:\CRESD\Source\klaro\srx_reports\Prüfungen.srx
+Group8File2=C:\CRESD\Source\klaro\srx_reports\Beispiel 1.srx
+Group8File3=C:\CRESD\Source\klaro\srx_reports\Beispiel 2.srx
+Group8File4=C:\CRESD\Source\klaro\srx_reports\Nationen.srx
+Group8File5=C:\CRESD\Source\klaro\srx_reports\Kurse.srx
+Group8File6=C:\CRESD\Source\klaro\srx_reports\Sitzungen.srx
+Group9Size=12069
+Group9Files=3
+Group9Name=Test Reports
+Group9Dir=<INSTALLDIR>\test_reports
+Group9Update=2
+Group9TargetOS=-1
+Group9File1=C:\CRESD\Source\klaro\test_reports\test.dtd
+Group9File2=C:\CRESD\Source\klaro\test_reports\BAMF Anmeldung Orientierungskurstest.xsl
+Group9File3=C:\CRESD\Source\klaro\test_reports\Einfache Liste.xsl
+
+[Sequence]
+DestinationLocationDir=<ProgramFilesDir>\CRESD\Klaro
+DatabaseLocationDir=<INSTALLDIR>\Tabellen
+SelectProgramFolderName=Klaro
+WelcomeMessage=1
+WelcomeMessageFile=
+ReadMeFileBrowser=1
+ReadMeFileBrowserFile=C:\CRESD\Source\klaro\readme.txt
+UserInformation=1
+DestinationLocation=1
+DatabaseLocation=1
+SelectProgramFolder=1
+BeginFileTransfer=1
+ProgressBar=1
+SetupComplete=1
+SetupCompleteExec=[Programme]\klaro.exe
+SetupCompleteExecParam=
+SetupCompleteExecReadme=[Programme]\readme.txt
+
+[RegEntries]
+Reg1Path=HKEY_CLASSES_ROOT
+Reg1Val1Type=0
+Reg1Val1Name=(Default)
+Reg1Val1Data=(value not set)
+Reg1Vals=1
+Reg2Path=HKEY_CURRENT_USER
+Reg2Val1Type=0
+Reg2Val1Name=(Default)
+Reg2Val1Data=(value not set)
+Reg2Vals=1
+Reg3Path=HKEY_LOCAL_MACHINE
+Reg3Val1Type=0
+Reg3Val1Name=(Default)
+Reg3Val1Data=(value not set)
+Reg3Vals=1
+Reg4Path=HKEY_USERS
+Reg4Val1Type=0
+Reg4Val1Name=(Default)
+Reg4Val1Data=(value not set)
+Reg4Vals=1
+Reg5Path=HKEY_CURRENT_CONFIG
+Reg5Val1Type=0
+Reg5Val1Name=(Default)
+Reg5Val1Data=(value not set)
+Reg5Vals=1
+Reg6Path=HKEY_DYN_DATA
+Reg6Val1Type=0
+Reg6Val1Name=(Default)
+Reg6Val1Data=(value not set)
+Reg6Vals=1
+Regs=6
+
+[Registry]
+Reg1Path=HKEY_CLASSES_ROOT
+Reg1ValName=(Default)
+Reg1ValType=0
+Reg1ValData=(value not set)
+Reg2Path=HKEY_CURRENT_USER
+Reg2ValName=(Default)
+Reg2ValType=0
+Reg2ValData=(value not set)
+Reg3Path=HKEY_LOCAL_MACHINE
+Reg3ValName=(Default)
+Reg3ValType=0
+Reg3ValData=(value not set)
+Reg4Path=HKEY_USERS
+Reg4ValName=(Default)
+Reg4ValType=0
+Reg4ValData=(value not set)
+Reg5Path=HKEY_CURRENT_CONFIG
+Reg5ValName=(Default)
+Reg5ValType=0
+Reg5ValData=(value not set)
+Reg6Path=HKEY_DYN_DATA
+Reg6ValName=(Default)
+Reg6ValType=0
+Reg6ValData=(value not set)
+Regs=6
+
+[Icons]
+Icons=7
+Icon1Param=
+Icon1Cmd=[Programme]\klaro.exe
+Icon1Description=Klaro Kursverwaltung
+Icon1WorkingDir=[Programme]
+Icon1IconFile=
+Icon1RealFile=C:\CRESD\Object\klaro.exe
+Icon1WhichIcon=0
+Icon1KeyVirtual=0
+Icon1KeyFlags=0
+Icon1StartMenu=0
+Icon1Window=0
+Icon2Param=
+Icon2Cmd=[Programme]\readme.txt
+Icon2Description=Readme
+Icon2WorkingDir=[Programme]
+Icon2IconFile=
+Icon2RealFile=C:\CRESD\Source\klaro\readme.txt
+Icon2WhichIcon=0
+Icon2KeyVirtual=0
+Icon2KeyFlags=0
+Icon2StartMenu=0
+Icon2Window=0
+Icon3Param=
+Icon3Cmd=[Programme]\klarodb.exe
+Icon3Description=Klaro Datenbankverwaltung
+Icon3WorkingDir=[Programme]
+Icon3IconFile=
+Icon3RealFile=C:\CRESD\Object\klarodb.exe
+Icon3WhichIcon=0
+Icon3KeyVirtual=0
+Icon3KeyFlags=0
+Icon3StartMenu=0
+Icon3Window=0
+Icon4Param=
+Icon4Cmd=[Programme]\klaro.exe
+Icon4Description=Klaro  Kursverwaltung
+Icon4WorkingDir=[Programme]
+Icon4IconFile=
+Icon4RealFile=C:\CRESD\Object\klaro.exe
+Icon4WhichIcon=0
+Icon4KeyVirtual=0
+Icon4KeyFlags=0
+Icon4StartMenu=3
+Icon4Window=0
+Icon5Param=
+Icon5Cmd=[BDE/IDAPI Dateien]\BDEADMIN.EXE
+Icon5Description=BDE Verwaltung
+Icon5WorkingDir=[BDE/IDAPI Dateien]
+Icon5IconFile=
+Icon5RealFile=C:\PROGRAMME\BORLAND\BDE\BDEADMIN.EXE
+Icon5WhichIcon=0
+Icon5KeyVirtual=0
+Icon5KeyFlags=0
+Icon5StartMenu=0
+Icon5Window=0
+Icon6Param=
+Icon6Cmd=[BDE/IDAPI Dateien]\datapump.exe
+Icon6Description=Data Pump
+Icon6WorkingDir=[BDE/IDAPI Dateien]
+Icon6IconFile=
+Icon6RealFile=C:\Programme\BORLAND\BDE\datapump.exe
+Icon6WhichIcon=0
+Icon6KeyVirtual=0
+Icon6KeyFlags=0
+Icon6StartMenu=0
+Icon6Window=0
+Icon7Param=
+Icon7Cmd=[Programme]\handbuch.pdf
+Icon7Description=Handbuch
+Icon7WorkingDir=[Programme]
+Icon7IconFile=
+Icon7RealFile=C:\CRESD\Source\klaro\handbuch.pdf
+Icon7WhichIcon=0
+Icon7KeyVirtual=0
+Icon7KeyFlags=0
+Icon7StartMenu=0
+Icon7Window=0
+
+[SQL Link Drivers]
+Driver1=Microsoft SQL Server Ent
+Driver2=Sybase (DB-Lib) Ent
+Driver3=Interbase Pro Ent
+Driver4=Oracle7 Ent
+Driver5=Oracle8 Ent
+Driver6=Informix7 Ent
+Driver7=Informix9 Ent
+Driver8=DB2 Ent
+Driver9=Sybase (CT-Lib) Ent
+Driver10=DB2 Version 5.0 Ent
+Driver11=SQL Links Help Ent
+Drivers=11
+DrvUsed=11111111111
+DrvHave=11
+
+[IDAPI Alias]
+Alias1=KLARO
+Alias1Path=<DATABASEDIR>
+Alias1Type=PARADOX
+Aliases=1
+SaveCfg=0
+
+[IDAPI Alias KLARO]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Autoexec]
+PathDir=
+ShareLocks=
+ShareFiles=
+Command=
+
+[CopyToFloppy]
+DriveOption=
+DestinationPath=
+DestinationPathOneFile=
+Password=
+
+[Disable Logging]
+DATABASEDIR=1
+
+[ISObjectIDs]
+nTotal=3
+ID1=101
+ID2=102
+ID3=58
+
+[Uninstall]
+UserUninstall=0

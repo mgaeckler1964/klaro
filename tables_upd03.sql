@@ -1,0 +1,9 @@
+alter table SCHUELER add
+(
+	RUECKGABE_DATUM			DATE
+);
+
+alter table KURSSCHUELER add
+(
+	KURS_WECHSEL	VARCHAR(255)
+);

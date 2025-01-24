@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.05.03"/>
+    <PROJECT value="..\..\object\klaro.exe"/>
+    <OBJFILES value="..\..\object\klaro\klaro.obj ..\..\object\klaro\DafMain.obj 
+      ..\..\object\klaro\ZahlungFrm.obj ..\..\object\klaro\KursInfoFrm.obj 
+      ..\..\object\klaro\LehrerFrm.obj ..\..\object\klaro\LehrerKursFrm.obj 
+      ..\..\object\klaro\SchuelerFrm.obj ..\..\object\klaro\KursFrm.obj 
+      ..\..\object\klaro\AboutFrm.obj ..\..\object\klaro\QuittungRp.obj 
+      ..\..\object\klaro\Config.obj ..\..\object\klaro\LicFrm.obj 
+      ..\..\object\klaro\xmlExp.obj ..\..\object\klaro\AnwesenheitsFrm.obj 
+      ..\..\object\klaro\StammdatenFrm.obj ..\..\object\klaro\FerienFrm.obj 
+      ..\..\object\klaro\PruefungenFrm.obj 
+      ..\..\object\klaro\SchuelerKursFrm.obj ..\..\object\klaro\LehrbuecherFrm.obj 
+      ..\..\object\klaro\KursBooksFrm.obj ..\..\object\klaro\LoginFrm.obj 
+      ..\..\object\klaro\KursplanFrm.obj ..\..\object\klaro\SearchFrm.obj 
+      ..\..\object\klaro\KurswechslerFrm.obj 
+      ..\..\object\klaro\AlleLehrzeitenFrm.obj 
+      ..\..\object\klaro\PruefungsTeilnehmerFrm.obj 
+      ..\..\object\klaro\OpenAccountsFrm.obj 
+      ..\..\object\klaro\OverlappedFrm.obj ..\..\object\klaro\LehrzeitenFrm.obj 
+      ..\..\object\klaro\AlleZahlungenFrm.obj 
+      ..\..\object\klaro\csvExImportFrm.obj ..\..\object\klaro\SetupFrm.obj 
+      ..\..\object\klaro\EinladungenFrm.obj"/>
+    <RESFILES value="klaro.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) DafMain.dfm ZahlungFrm.dfm KursInfoFrm.dfm LehrerFrm.dfm 
+      LehrerKursFrm.dfm SchuelerFrm.dfm KursFrm.dfm AboutFrm.dfm QuittungRp.dfm 
+      ..\GAKLIB\Repository\Config.dfm ..\GAKLIB\Repository\LicFrm.dfm xmlExp.dfm 
+      AnwesenheitsFrm.dfm StammdatenFrm.dfm FerienFrm.dfm PruefungenFrm.dfm 
+      SchuelerKursFrm.dfm LehrbuecherFrm.dfm KursBooksFrm.dfm LoginFrm.dfm 
+      KursplanFrm.dfm SearchFrm.dfm KurswechslerFrm.dfm AlleLehrzeitenFrm.dfm 
+      PruefungsTeilnehmerFrm.dfm OpenAccountsFrm.dfm OverlappedFrm.dfm 
+      LehrzeitenFrm.dfm AlleZahlungenFrm.dfm csvExImportFrm.dfm SetupFrm.dfm 
+      EinladungenFrm.dfm"/>
+    <LIBFILES value="..\..\Object\gaklib\gaklib_bcb.lib"/>
+    <LIBRARIES value="vclx50.lib qrpt50.lib vclbde50.lib vcldb50.lib vcl50.lib"/>
+    <SPARELIBS value="vcl50.lib vcldb50.lib vclbde50.lib qrpt50.lib vclx50.lib"/>
+    <PACKAGES value="vcl50.bpi vclx50.bpi vcljpg50.bpi vcldb50.bpi vclbde50.bpi ocx_pack.bpi 
+      gak_components.bpi bcbsmp50.bpi dclocx50.bpi vcldbx50.bpi qrpt50.bpi 
+      vclado50.bpi"/>
+    <PATHCPP value=".;..\GAKLIB\Repository"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib_ger\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib_ger\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="NDEBUG"/>
+    <SYSDEFINES value="NO_STRICT;_VIS_NOLIB"/>
+    <MAINSOURCE value="klaro.cpp"/>
+    <INCLUDEPATH value="..\GAKLIB\VCL_TOOLS;..\GAKLIB\Repository;$(BCB)\include;$(BCB)\include\vcl;..\gaklib\include"/>
+    <LIBPATH value="..\GAKLIB\VCL_TOOLS;..\GAKLIB\Repository;$(BCB)\lib_ger\obj;$(BCB)\lib_ger"/>
+    <WARNINGS value="-w8092 -w8091 -w8090 -w8089 -w8087 -wprc -wuse -wucp -wstv -wstu -wsig 
+      -wpin -w-par -wnod -wnak -wdef -wcln -wbbf -wasm -wamp -wamb"/>
+    <WARNOPTSTR value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I..\GAKLIB\VCL_TOOLS -I..\GAKLIB\Repository -I$(BCB)\include 
+      -I$(BCB)\include\vcl -I..\gaklib\include -src_suffix cpp -DNDEBUG -boa"/>
+    <CFLAG1 value="-O2 -H=..\..\Object\klaro\klaro.csm -Hc -w -Vx -Ve -X- -a8 -6 -b- -d -k- 
+      -vi -c -tW -tWM"/>
+    <PFLAGS value="-N2..\..\object\klaro -N0..\..\object\klaro -$Y- -$L- -$D- -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-I..\..\object\klaro -D&quot;&quot; -aa -Tpe -GD -s -Gn -w"/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+  </LINKER>
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=3
+MinorVer=0
+Release=0
+Build=113
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1031
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=CRESD GmbH
+FileDescription=KLARO - Kursverwaltung
+FileVersion=3.0.0.113
+InternalName=KLARO
+LegalCopyright=(c) 2003-2013 by CRESD GmbH
+LegalTrademarks=
+OriginalFilename=KLARO.EXE
+ProductName=Klaro
+ProductVersion=3.0.0.0
+Comments=http://www.cresd.de/
+
+[HistoryLists\hlIncludePath]
+Count=6
+Item0=..\GAKLIB\VCL_TOOLS;..\GAKLIB\Repository;$(BCB)\include;$(BCB)\include\vcl;..\gaklib\include
+Item1=..\GAKLIB\Repository;$(BCB)\include;$(BCB)\include\vcl;..\gaklib\include
+Item2=$(BCB)\include;$(BCB)\include\vcl;..\gaklib\include
+Item3=C:\Programme\Borland\CBuilder5\Projects\;..\GAKLIB\CTOOLS;..\GAKLIB\Repository;$(BCB)\include;$(BCB)\include\vcl;..\gaklib\include
+Item4=C:\Programme\Borland\CBuilder5\Projects;..\GAKLIB\CTOOLS;..\GAKLIB\Repository;$(BCB)\include;$(BCB)\include\vcl;..\gaklib\include
+Item5=..\GAKLIB\CTOOLS;..\GAKLIB\Repository;$(BCB)\include;$(BCB)\include\vcl;..\gaklib\include
+
+[HistoryLists\hlLibraryPath]
+Count=6
+Item0=..\GAKLIB\VCL_TOOLS;..\GAKLIB\Repository;$(BCB)\lib_ger\obj;$(BCB)\lib_ger
+Item1=..\GAKLIB\Repository;$(BCB)\lib_ger\obj;$(BCB)\lib_ger
+Item2=$(BCB)\lib_ger\obj;$(BCB)\lib_ger
+Item3=C:\Programme\Borland\CBuilder5\Projects\;..\Gaklib\CTOOLS;..\GAKLIB\Repository;$(BCB)\lib_ger\obj;$(BCB)\lib_ger
+Item4=C:\Programme\Borland\CBuilder5\Projects;..\Gaklib\CTOOLS;..\GAKLIB\Repository;$(BCB)\lib_ger\obj;$(BCB)\lib_ger
+Item5=..\Gaklib\CTOOLS;..\GAKLIB\Repository;$(BCB)\lib_ger\obj;$(BCB)\lib_ger
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=3
+Item0=NDEBUG
+Item1=NDEBUG;_DEBUG
+Item2=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=3
+Item0=..\..\object\klaro
+Item1=F:\object\klaro\
+Item2=..\..\object\klaro\
+
+[HistoryLists\hlFinalOutputDir]
+Count=1
+Item0=..\..\object\
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=1
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+  </IDEOPTIONS>
+</PROJECT>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<sql_report title="Kursliste" table_name="kurse" record_name="kurs" USER_NAME="" PASSWORD="" DB_ALIAS="KLARO">
+<query>
+<sql>select * from kurse 
+where (id &gt; :theId1 and id &lt; :theId2)
+or nummer = :theNumber
+or bamf_nummer = :theBamfNumber
+or vorkurs = :theVorkurs
+or kursart = :theKursArt
+or kurstyp = :theKursType
+or kursabschnitt = :theKursSession
+or niveau = :theKursLevel
+or raum = :theKursRaum
+or lehrbuch = :lehrbuch
+order by anfangs_datum
+</sql>
+<params>
+<param name="theId1" label="Min ID" value="0" type="int" />
+<param name="theId2" label="Max ID" value="999999" type="int" />
+<param name="theNumber" label="Kursnummer" value="" type="string" />
+<param name="theBamfNumber" label="Kursnummer (BAMF)" value="" type="string" />
+<param name="theVorkurs" label="Vorkurs" value="" type="string" />
+<param name="lehrbuch" label="Lehrbuch" value="" type="string" />
+<param name="theKursArt" label="Kursart" value="" type="string" />
+<param name="theKursType" label="Kurstyp" value="" type="string" />
+<param name="theKursSession" label="Kursabschnitt" value="" type="string" />
+<param name="theKursLevel" label="Niveau" value="" type="string" />
+<param name="theKursRaum" label="Raum" value="" type="string" />
+</params>
+</query>
+<chart title="Stunden und Geld" legend="yes" type="" subtype="" topAxisTitle="Datum" leftAxisTitle="Stunden" rightAxisTitle="Euro" bottomAxisTitle="Kurs" topAxisGrid="no" leftAxisGrid="yes" rightAxisGrid="no" bottomAxisGrid="yes">
+<data label="Anfangs_datum" value="Kursgebuehr" title="Kursgebühr" type="bar" subtype="" color="FFFF00" vaxis="right" haxis="top" explode="" others="" mark="value" legend="no" />
+<data label="nummer" value="Wochenstunden" title="Wochenstunden" type="area" subtype="stacked" color="FF0000" vaxis="left" haxis="" explode="" others="" mark="" legend="no" />
+<data label="nummer" value="TT_STUNDEN" title="Team Teacher Stunden" type="area" subtype="stacked" color="00FF00" vaxis="left" haxis="" explode="" others="" mark="" legend="no" />
+<data label="nummer" value="SOZ_PAED_STUNDEN" title="Soz. Päd. Stunden" type="area" subtype="stacked" color="0000FF" vaxis="left" haxis="" explode="" others="" mark="" legend="no" />
+<data label="nummer" value="Unterrichtsstunden" title="Unterichtsstunden" type="line" subtype="" color="613CC4" vaxis="left" haxis="" explode="" others="" mark="" legend="no" />
+</chart>
+</sql_report>

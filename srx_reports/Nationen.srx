@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!--
+	define a report
+	===============
+	
+	sql_report attributes:
+	----------------------
+	
+	table_name:		the tag for the root element for the XML export. Default is "data"
+	record_name:	the tag for each record for the XML export. Default is "entry"
+	title:			the title for the report
+-->
+<sql_report title="Nationen">
+	<query>
+		<!-- Here add your SQL Command -->
+		<sql>
+			select NATIONALITAET as Nation, count(*) as Anzahl 
+			from schueler 
+			where nationalitaet is not null 
+			group by NATIONALITAET
+			order by 2 desc
+		</sql>
+	</query>
+	<!--
+		define a chart
+		==============
+		
+		chart attributes:
+		-----------------
+		
+		title:			the title of the chart. If you omit the title the title of the report is used.
+		legend:			Show a legend (yes, no)
+		type:			the default type for each data field.
+		subtype:		the subtype for area and bar if there is more than one datafield with this type.
+		leftAxisTitle
+		rightAxisTitle
+		bottomAxisTitle
+		topAxisTitle:	the titles for each axis
+		leftAxisGrid
+		rightAxisGrid
+		bottomAxisGrid
+		topAxisGrid:	Show the grid for each axis
+
+		possible types are:
+		-------------------
+
+		line:	a line chart (no marks)
+		area:	a filled line chart (no marks, subtypes are: normal, stacked and stacked100)
+		pie:	a pie chart
+		bar:	a bar chart (subtypes are: normal, side, stacked and stacked100)
+		
+		data attributes:
+		----------------
+
+		label, value:	These are the field names of the query, where to get the label and the value.
+		type, subtype:	you can define type a subtype for each data field.
+		color:			Hex number of a color with Blue, Green, Red parts. If you omit the color, each value gets its own color.
+		title:			The title of the data field used in the legend if there is more than one data item.
+		vaxis:			Where to show the vertical axis (left, right or both)
+		haxis:			Where to show the horizontal axis (top, bottom or both)
+		legend:			Show this field in legend (yes, no)
+		explode:		How the biggest value is exploded (pie charts only).
+		others:			What values are grouped together. Absolute or percent value. (pie charts only)
+		mark:			How to display the values within the chart. Only for type pie and bar.
+
+		possible marks are:
+		-------------------
+		
+		hidden:				don't show
+		value:				value of the field
+		percent:			percent value
+		label:				value of the label field
+		labelPercent:		label with percent value
+		labelValue:			label with the value of the field
+		percentTotal:		percent with sum of all values
+		labelPercentTotal:	label with percent value and sum of all values
+	-->
+	<chart type="pie" legend="yes">
+		<data label="Nation" value="Anzahl" mark="labelPercentTotal" explode="20" others="2%"/>
+	<chart>
+</sql_report>

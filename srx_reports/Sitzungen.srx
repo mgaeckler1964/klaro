@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!--
+	define a report
+	===============
+	
+	sql_report attributes:
+	----------------------
+	
+	table_name:		the tag for the root element for the XML export. Default is "data"
+	record_name:	the tag for each record for the XML export. Default is "entry"
+	title:			the title for the report
+-->
+<sql_report>
+	<query>
+		<!-- Here add your SQL Command -->
+		<sql>
+			select Entry_name as Eintrag, int_value as Wert 
+			from config 
+			where entry_name like 'session%'
+		</sql>
+	</query>
+</sql_report>

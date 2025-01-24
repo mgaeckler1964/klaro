@@ -1,0 +1,18 @@
+Anleitung für die "Hochzeit" von Klaro und OS-BIZ
+
+1. Benutzer KLARO erzeugen. Er braucht die Rechte/Rollen Connect, Ressource.
+2. Benutzer KLARO_OSBIZ erzeugen. Er braucht die Rechte/Rollen Connect,
+   Ressource und CREATE SYNOMYMS.
+3. Mit MVHS verbinden und Script klaro_mvhs.sql ausführen.
+4. Mit KLARO verbinden und die Scripte tables.sql und klaro_grant2osbiz.sql in
+   dieser Reihenfolge ausführen.
+5. Mit KLARO_OSBIZ verbinden und Scripte _klaro_synonyms.sql und klarosbiz.sql
+   in dieser Reihenfolge ausführen
+6. Optional: Alias KLARO mit dem Benutzernamen KLARO_OSBIZ vorbelegen.
+
+Update des Schemas
+1. Mit KLARO verbinden und das Script tables_upd01.sql ausführen.
+2. Mit KLARO_OSBIZ verbinden das Script klarosbiz.sql ausführen.
+3. Test: Klaro einmal öffnen und mit KLARO_OSBIZ verbinden. Dann einmal im 
+   Schülerfenster den Schalter "Kurse..." klicken. Es darf kein DB-Fehler
+   angezeigt werden,

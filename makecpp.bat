@@ -1,0 +1,1 @@
+impwsdl -proxy judith -port 3128 -keyfile klaro.pem -password isoalk https://services.test.migra.bamf.de/gateway/services/Teilnehmermeldung?wsdl

@@ -1,0 +1,95 @@
+<!-- 
+	DTD fuer den XML Export von Klaro 2.0
+	(c) 2003-2009 by CRESD GmbH, Muenchen, Deutschland
+	http://www.cresd.de/
+-->
+
+<!-- Der Wurzelknoten -->
+<!-- Die Pruefung -->
+<!ELEMENT pruefung (traeger?,teilnehmer?)>
+<!ATTLIST pruefung
+	id						CDATA	#REQUIRED
+	pruefung				CDATA	#REQUIRED
+	pruefungs_nummer		CDATA	#REQUIRED
+	aufsicht				CDATA	#REQUIRED
+	datum					CDATA	#REQUIRED
+	jahr					CDATA	#REQUIRED
+	datum_string			CDATA	#REQUIRED
+>
+
+<!-- Der Traeger -->
+<!ATTLIST traeger
+	traeger_name				CDATA	#REQUIRED
+	traeger_strasse				CDATA	#REQUIRED
+	traeger_plz					CDATA	#REQUIRED
+	traeger_ort					CDATA	#REQUIRED
+	traeger_bundesland			CDATA	#REQUIRED
+	traeger_bamf_nr				CDATA	#REQUIRED
+	traeger_bamf_regionalstelle	CDATA	#REQUIRED
+	traeger_konto				CDATA	#REQUIRED
+	traeger_blz					CDATA	#REQUIRED
+	traeger_bank				CDATA	#REQUIRED
+>
+
+<!ELEMENT teilnehmer (schueler*)>
+<!ELEMENT schueler (bemerkung?, pruef_bemerkung?)>
+<!ATTLIST schueler
+	id						CDATA	#REQUIRED
+	aenderungsdatum			CDATA	#REQUIRED
+	anmelde_datum			CDATA	#REQUIRED
+	anrede					CDATA	#REQUIRED
+	geschlecht				CDATA	#REQUIRED
+	nachname				CDATA	#REQUIRED
+	vorname					CDATA	#REQUIRED
+	wohnung					CDATA	#REQUIRED
+	strasse					CDATA	#REQUIRED
+	land					CDATA	#REQUIRED
+	plz						CDATA	#REQUIRED
+	ort						CDATA	#REQUIRED
+	tel_priv				CDATA	#REQUIRED
+	tel_buero				CDATA	#REQUIRED
+	tel_mobil				CDATA	#REQUIRED
+	tel_fax					CDATA	#REQUIRED
+	e_mail					CDATA	#REQUIRED
+	geburtsdatum			CDATA	#REQUIRED
+	alter					CDATA	#IMPLIED
+	geburtsort				CDATA	#REQUIRED
+	nationalitaet			CDATA	#REQUIRED
+	auslaender_status		CDATA	#REQUIRED
+	beruf					CDATA	#REQUIRED
+	taetigkeit				CDATA	#REQUIRED
+	woher					CDATA	#REQUIRED
+	pruefungen				CDATA	#REQUIRED
+	einstufung				CDATA	#REQUIRED
+	isced_level				CDATA	#REQUIRED
+	schuljahre				CDATA	#REQUIRED
+	kurs_modul				CDATA	#REQUIRED
+	kursart					CDATA	#REQUIRED
+	schreibfaehigkeit		CDATA	#REQUIRED
+	ausweis_nummer			CDATA	#REQUIRED
+	bamf_nummer				CDATA	#REQUIRED
+	abh_nummer				CDATA	#REQUIRED
+	bva_nummer				CDATA	#REQUIRED
+	az_grundsicherung		CDATA	#REQUIRED
+	abgeschlossen			CDATA	#REQUIRED
+	bank_inhaber			CDATA	#REQUIRED
+	bank_konto				CDATA	#REQUIRED
+	bank_blz				CDATA	#REQUIRED
+	bank_name				CDATA	#REQUIRED
+	ap_name					CDATA	#REQUIRED
+	ap_vorname				CDATA	#REQUIRED
+	ap_organisation			CDATA	#REQUIRED
+	ap_strasse				CDATA	#REQUIRED
+	ap_plz					CDATA	#REQUIRED
+	ap_ort					CDATA	#REQUIRED
+	ap_telefon				CDATA	#REQUIRED
+	ap_fax					CDATA	#REQUIRED
+	ap_email				CDATA	#REQUIRED
+	ap_info					CDATA	#REQUIRED
+	bestanden				CDATA	#REQUIRED
+	kostenbeteiligung		CDATA	#REQUIRED
+>
+
+<!-- Die Bemerkungen -->
+<!ELEMENT bemerkung (#PCDATA)>
+<!ELEMENT pruef_bemerkung (#PCDATA)>

@@ -1,0 +1,9 @@
+alter table KURSE add (
+	ZEIT_BEMERKUNG VARCHAR(4000)
+);
+alter table PRUEFUNGEN add (
+	PRUEFUNGS_NUMMER VARCHAR2(32)
+);
+alter table KURSSCHUELER add (
+	SCHUELER_MODUL VARCHAR2(32)
+);

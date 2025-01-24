@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!--
+	define a report
+	===============
+	
+	sql_report attributes:
+	----------------------
+	
+	table_name:		the tag for the root element for the XML export. Default is "data"
+	record_name:	the tag for each record for the XML export. Default is "entry"
+	title:			the title for the report
+-->
+	
+<sql_report table_name="kurse" record_name="kurs" title="Kursliste">
+	<query>
+		<!-- Here add your SQL Command -->
+		<sql>
+			select * from kurse 
+			where (id &gt; :theId1 and id &lt; :theId2)
+			or nummer = :theNumber
+			or bamf_nummer = :theBamfNumber
+			or vorkurs = :theVorkurs
+			or kursart = :theKursArt
+			or kurstyp = :theKursType
+			or kursabschnitt = :theKursSession
+			or niveau = :theKursLevel
+			or raum = :theKursRaum
+			or lehrbuch = :lehrbuch
+			order by anfangs_datum
+		</sql>
+		<params>
+			<!-- 
+				define the parameter
+				====================
+				
+				possible types are:
+				-------------------
+
+				int:		4 byte integer
+				float:		double precision floats
+				date:		date
+				time:		time
+				date_time:	date and time
+				string:		alpha numeric
+			-->
+			<param name="theId1" 			label="Min ID" 				value="0"		type="int" />
+			<param name="theId2" 			label="Max ID" 				value="999999"	type="int" />
+			<param name="theNumber"			label="Kursnummer"			value=""		type="string" />
+			<param name="theBamfNumber"		label="Kursnummer (BAMF)"	value=""		type="string" />
+			<param name="theVorkurs"		label="Vorkurs"				value=""		type="string" />
+			<param name="lehrbuch"			label="Lehrbuch"			value=""		type="string" />
+			<param name="theKursArt"		label="Kursart"				value=""		type="string" />
+			<param name="theKursType"		label="Kurstyp"				value=""		type="string" />
+			<param name="theKursSession"	label="Kursabschnitt"		value=""		type="string" />
+			<param name="theKursLevel"		label="Niveau"				value=""		type="string" />
+			<param name="theKursRaum"		label="Raum"				value=""		type="string" />
+		</params>
+	</query>
+	<!--
+		define a chart
+		==============
+		
+		chart attributes:
+		-----------------
+		
+		title:			the title of the chart. If you omit the title the title of the report is used.
+		legend:			Show a legend (yes, no)
+		type:			the default type for each data field.
+		subtype:		the subtype for area and bar if there is more than one datafield with this type.
+		leftAxisTitle
+		rightAxisTitle
+		bottomAxisTitle
+		topAxisTitle:	the titles for each axis
+		leftAxisGrid
+		rightAxisGrid
+		bottomAxisGrid
+		topAxisGrid:	Show the grid for each axis
+
+		possible types are:
+		-------------------
+
+		line:	a line chart (no marks)
+		area:	a filled line chart (no marks, subtypes are: normal, stacked and stacked100)
+		pie:	a pie chart
+		bar:	a bar chart (subtypes are: normal, side, stacked and stacked100)
+		
+		data attributes:
+		----------------
+
+		label, value:	These are the field names of the query, where to get the label and the value.
+		type, subtype:	you can define type a subtype for each data field.
+		color:			Hex number of a color with Blue, Green, Red parts. If you omit the 	color, each value gets its own color.
+		title:			The title of the data field used in the legend if there is more than one data item.
+		vaxis:			Where to show the vertical axis (left, right or both)
+		haxis:			Where to show the horizontal axis (top, bottom or both)
+		legend:			Show this field in legend (yes, no)
+		explode:		How the biggest value is exploded (pie charts only).
+		others:			What values are grouped together. Absolute or percent value. (pie charts only)
+		mark:			How to display the values within the chart. Only for type pie and bar.
+
+		possible marks are:
+		-------------------
+		
+		hidden:				don't show
+		value:				value of the field
+		percent:			percent value
+		label:				value of the label field
+		labelPercent:		label with percent value
+		labelValue:			label with the value of the field
+		percentTotal:		percent with sum of all values
+		labelPercentTotal:	label with percent value and sum of all values
+	-->
+	<chart legend="yes" title="Stunden und Geld" 
+		leftAxisTitle="Stunden" rightAxisTitle="Euro" bottomAxisTitle="Kurs" topAxisTitle="Datum"
+		leftAxisGrid="yes" rightAxisGrid="no" bottomAxisGrid="yes" topAxisGrid="no"
+	>
+		<data label="Anfangs_datum"	value="Kursgebuehr"			color="FFFF00" title="Kursgebühr"			type="bar"	 					vaxis="right" haxis="top"	mark="value" legend="no" />
+		<data label="nummer"		value="Wochenstunden" 		color="FF0000" title="Wochenstunden"		type="area" subtype="stacked"	vaxis="left" />
+		<data label="nummer"		value="TT_STUNDEN" 			color="00FF00" title="Team Teacher Stunden"	type="area" subtype="stacked"	vaxis="left" />
+		<data label="nummer"		value="SOZ_PAED_STUNDEN" 	color="0000FF" title="Soz. Päd. Stunden"	type="area" subtype="stacked"	vaxis="left" />
+		<data label="nummer"		value="Unterrichtsstunden"	color="FF00FF" title="Unterichtsstunden"	type="line"						vaxis="left" />
+	</chart>
+</sql_report>

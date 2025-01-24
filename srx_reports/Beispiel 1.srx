@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!--
+	define a report
+	===============
+	
+	sql_report attributes:
+	----------------------
+	
+	table_name:		the tag for the root element for the XML export. Default is "data"
+	record_name:	the tag for each record for the XML export. Default is "entry"
+	title:			the title for the report
+-->
+<sql_report table_name="kurse" record_name="kurs" title="Beispiel 1">
+	<query>
+		<!-- Here add your SQL Command -->
+		<sql>
+			select * from kurse 
+			where id &gt; :theId1 
+			and id &lt; :theId2 
+			order by anfangs_datum
+		</sql>
+		<params>
+			<!-- 
+				define the parameter
+				====================
+				
+				possible types are:
+				-------------------
+
+				int:		4 byte integer
+				float:		double precision floats
+				date:		date
+				time:		time
+				date_time:	date and time
+				string:		alpha numeric
+			-->
+			<param name="theId1" label="Min ID" value="0" type="int" />
+			<param name="theId2" label="Max ID" value="999999" type="int" />
+		</params>
+	</query>
+</sql_report>
